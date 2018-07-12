@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { link } from "fs";
+import Background from "./Background";
 
 class App extends Component {
   state = {
@@ -19,6 +20,7 @@ class App extends Component {
         <div className="Contacts">
           {this.state.users.map(user => (
             <React.Fragment>
+              <Background />
               <h1 className="Username">{user.username}</h1>
               <h5 className="Location">{user.location}</h5>
             </React.Fragment>
