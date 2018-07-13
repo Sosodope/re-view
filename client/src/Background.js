@@ -16,7 +16,7 @@ class Background extends Component {
         let pictures = data.results.map(pic => {
           return (
             <div key={pic.results}>
-              <img src={pic.picture.medium} />
+              <img src={pic.picture.large} />
             </div>
           );
         });
